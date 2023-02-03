@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+$time-font: "PT Mono", monospace;
+$main-font: "Gantari", sans-serif;
+
+$bp-small: 37.5em; //600px
+
+html {
+  box-sizing: border-box;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  &-1 {
+    font-family: $main-font;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+    // background-color: #9599e2;
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    letter-spacing: 0.2rem;
+  }
+}

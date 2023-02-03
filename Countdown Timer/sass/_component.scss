@@ -1,0 +1,49 @@
+.box {
+  background-color: aliceblue;
+  width: 70%;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 90%;
+  }
+}
+
+.countdown {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 4rem;
+    text-align: center;
+    color: #676ccf;
+    font-family: $main-font;
+
+    &-bigtext {
+      font-family: $time-font;
+      font-size: 4.4rem;
+      font-weight: bolder;
+
+      background-image: linear-gradient(135deg, #9599e2 100%, #8bc6ec 0%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+}
+
+.col {
+  span {
+    font-size: 1.5rem;
+    font-family: $main-font;
+  }
+  &:not(:last-child) {
+    margin-right: 4rem;
+  }
+}
