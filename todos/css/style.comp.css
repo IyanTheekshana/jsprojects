@@ -24,7 +24,7 @@ body {
   font-family: "Poppins", sans-serif; }
 
 .title {
-  font-size: 15rem;
+  font-size: 13rem;
   background-image: linear-gradient(135deg, #001c46 100%, #5089be 0%);
   background-clip: text;
   -webkit-background-clip: text;
